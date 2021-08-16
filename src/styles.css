@@ -12,6 +12,10 @@ h1 {
   margin-bottom: 5rem;
 }
 
+body {
+  margin-bottom: 0rem;
+}
+
 .label {
   /* display: inline-block;
   width: 150px;
