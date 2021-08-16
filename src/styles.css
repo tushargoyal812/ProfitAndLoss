@@ -2,3 +2,105 @@
   font-family: sans-serif;
   text-align: center;
 }
+:root {
+  --primary-color: #7fffd4;
+  --dark-gray: #6b7280;
+  --light-gray: #e5e7eb;
+}
+
+h1 {
+  margin-bottom: 5rem;
+}
+
+.label {
+  /* display: inline-block;
+  width: 150px;
+  text-align: right; */
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+input {
+  border: 2px solid #6b7280;
+  border-radius: 1rem;
+  padding: 0.5rem 3rem;
+}
+
+button {
+  margin: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #6b7280;
+  padding: 0.7rem 1rem;
+}
+
+.footer {
+  background-color: var(--primary-color);
+  padding: 2rem 1rem;
+  color: white;
+  text-align: center;
+  border-top-right-radius: 1rem;
+  margin-top: 4rem;
+}
+
+.footer .link {
+  color: white;
+}
+
+.footer .footer-header {
+  font-weight: bold;
+  font-size: large;
+  color: black;
+}
+
+.footer ul {
+  padding-inline-start: 0px;
+}
+
+.git-img {
+  height: 4rem;
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
+.git-img:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.twitter-img {
+  height: 4rem;
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
+.twitter-img:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+.linkedin-img {
+  height: 4rem;
+  transition: transform 0.2s;
+  margin: 0 auto;
+}
+.linkedin-img:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+li {
+  display: inline-block;
+  padding: 1.5rem;
+}
+
+footer {
+  margin-top: 10rem;
+  padding: 2rem 1rem;
+  background-color: #6b7280;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}

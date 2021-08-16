@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./styles.css";
+import gitImg from "./images/github (1).png";
+import linkedinImg from "./images/linkedin (2).png";
+import twitterImg from "./images/twitter (1).png";
 
 export default function App() {
   const [purchasePrice, setpurchase] = useState();
@@ -60,7 +63,7 @@ export default function App() {
       <h1>Check Profit/Loss on your Stock</h1>
       <form onSubmit={checkHandler}>
         <div>
-          <label>purchase price</label>
+          <div className="label">purchase price</div>
           <input
             pattern="[0-9]*"
             type="number"
@@ -69,7 +72,7 @@ export default function App() {
           />
         </div>
         <div>
-          <label>stock quantity</label>
+          <div className="label">stock quantity</div>
           <input
             pattern="[0-9]*"
             type="number"
@@ -78,7 +81,7 @@ export default function App() {
           />
         </div>
         <div>
-          <label>current price</label>
+          <div className="label">current price</div>
           <input
             pattern="[0-9]*"
             type="number"
@@ -109,6 +112,25 @@ export default function App() {
           ""
         )}
       </div>
+      <footer>
+        <ul>
+          <li className="list-item-inline">
+            <a href={"https://github.com/tushargoyal812"}>
+              <img className="git-img" src={gitImg} />
+            </a>
+          </li>
+          <li className="list-item-inline">
+            <a href={"https://www.linkedin.com/in/tushar-goyal-8868741b1"}>
+              <img className="linkedin-img" src={linkedinImg} />
+            </a>
+          </li>
+          <li className="list-item-inline">
+            <a href={"https://twitter.com/tushargoyal29"}>
+              <img className="twitter-img" src={twitterImg} />
+            </a>
+          </li>
+        </ul>
+      </footer>
     </div>
   );
 }
