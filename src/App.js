@@ -23,8 +23,7 @@ export default function App() {
     var oldPrice = PS * Qnt;
     var newPrice = CP * Qnt;
     var profit = newPrice - oldPrice;
-    var difference = CP - PS;
-    var percentage = (difference / PS) * 100;
+    var percentage = (profit / PS) * 100;
     setPercentage(percentage.toFixed(2));
     setProfit(profit);
     console.log(percentage);
@@ -37,8 +36,7 @@ export default function App() {
     var oldPrice = PS * Qnt;
     var newPrice = CP * Qnt;
     var loss = oldPrice - newPrice;
-    var difference = PS - CP;
-    var percentage = (difference / PS) * 100;
+    var percentage = (loss / PS) * 100;
     setPercentage(percentage.toFixed(2));
     setProfit(loss);
     console.log(percentage);
@@ -93,25 +91,25 @@ export default function App() {
           <button type="submit">check</button>
         </div>
       </form>
-      <div>
+      <h2>
         {profitOutput ? (
-          <div>
+          <div style={{ padding: "1rem", backgroundColor: "green" }}>
             {" "}
             you gained {GetPercentage}% your total profit is ₹{GetProfit}
           </div>
         ) : (
           ""
         )}
-      </div>
-      <div>
+      </h2>
+      <h2 className="loss">
         {lossOutput ? (
-          <div>
+          <div style={{ padding: "1rem", backgroundColor: "red" }}>
             you lost {GetPercentage}% your total loss is ₹{GetProfit}
           </div>
         ) : (
           ""
         )}
-      </div>
+      </h2>
       <footer>
         <ul>
           <li className="list-item-inline">
